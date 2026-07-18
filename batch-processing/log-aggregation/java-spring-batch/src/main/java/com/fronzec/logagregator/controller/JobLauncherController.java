@@ -45,7 +45,7 @@ public class JobLauncherController {
                     .addDate("date", new Date())
                     .toJobParameters();
 
-            var jobExecution = sync 
+            var jobExecution = sync
                 ? syncJobLauncher.run(importLogDataJob, jobParameters)
                 : asyncJobLauncher.run(importLogDataJob, jobParameters);
 

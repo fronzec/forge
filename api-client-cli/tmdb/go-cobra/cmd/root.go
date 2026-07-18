@@ -11,7 +11,7 @@ import (
 var RootCmd = &cobra.Command{
 	Use:   "tmdb-app",
 	Short: "TMDB CLI is a command line interface for The Movie Database",
-	Long: `A command line interface application that allows you to interact 
+	Long: `A command line interface application that allows you to interact
 with The Movie Database (TMDB) API to search for movies, TV shows, and more.`,
 }
 
