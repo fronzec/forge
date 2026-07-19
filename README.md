@@ -14,6 +14,7 @@ New experiments should follow the [experiment README guideline](docs/experiment-
 | [Declarative desktop UI / Qt Quick + PySide6](declarative-desktop-ui/qt-quick/python-pyside6/) | Migrated snapshot | Compare a QML view with a minimal Python bootstrap. |
 | [Event-driven desktop UI / Qt Widgets + PySide6](event-driven-desktop-ui/qt-widgets/python-pyside6/) | Migrated snapshot | Demonstrate widget composition and signal-slot interaction. |
 | [Batch processing / Spring Batch log aggregation](batch-processing/log-aggregation/java-spring-batch/) | Migrated snapshot | Import CSV log records through a chunk-oriented batch job. |
+| [Database sharding / order service with Spring and ShardingSphere](database-sharding/order-service/java-spring-shardingsphere/) | Migrated snapshot | Route orders across two MySQL databases by order ID parity. |
 | [API client CLI / TMDB + Cobra](api-client-cli/tmdb/go-cobra/) | Migrated snapshot | Explore a typed API client behind a Cobra command interface. |
 | [API wrapper / cached weather + `net/http`](api-wrapper/cached-weather/go-net-http/) | Migrated snapshot | Wrap a weather API with Redis caching and per-IP rate limiting. |
 | [REST API / routing CRUD with Chi](rest-api/routing-crud/go-chi/) | Migrated snapshot | Explore resource-oriented routing while proxying CRUD requests. |

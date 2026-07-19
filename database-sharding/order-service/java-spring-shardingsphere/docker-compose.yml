@@ -1,0 +1,36 @@
+services:
+  db1:
+    image: mysql:8.0.23
+    restart: "no"
+    environment:
+      MYSQL_DATABASE: ${DB1_NAME:-db1}
+      MYSQL_ROOT_PASSWORD: ${DB1_PASSWORD:-root}
+    ports:
+      - "${DB1_PORT:-3306}:3306"
+    volumes:
+      - db1-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${DB1_PASSWORD:-root}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  db2:
+    image: mysql:8.0.23
+    restart: "no"
+    environment:
+      MYSQL_DATABASE: ${DB2_NAME:-db2}
+      MYSQL_ROOT_PASSWORD: ${DB2_PASSWORD:-root}
+    ports:
+      - "${DB2_PORT:-3307}:3306"
+    volumes:
+      - db2-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${DB2_PASSWORD:-root}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  db1-data:
+  db2-data:

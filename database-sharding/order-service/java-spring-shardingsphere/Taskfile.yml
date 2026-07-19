@@ -1,0 +1,33 @@
+version: '3'
+
+silent: true
+
+tasks:
+  setup:
+    desc: Create local configuration and start both MySQL shards
+    cmds:
+      - test -f .env || cp .env.example .env
+      - podman-compose --file docker-compose.yml up --detach
+
+  run:
+    desc: Run the order service with local environment configuration
+    cmds:
+      - set -a; . ./.env; set +a; ./mvnw spring-boot:run
+
+  test:
+    desc: Run infrastructure-independent unit tests
+    cmds:
+      - ./mvnw test
+
+  verify:
+    desc: Validate Compose configuration and run the Maven verification lifecycle
+    cmds:
+      - podman-compose --file docker-compose.yml config >/dev/null
+      - ./mvnw verify
+
+  cleanup:
+    desc: Remove local containers, volumes, configuration, and build output
+    cmds:
+      - podman-compose --file docker-compose.yml down --remove-orphans --volumes
+      - ./mvnw clean
+      - rm -f .env

@@ -1,0 +1,54 @@
+### Read an order
+GET http://localhost:8080/orders/1
+
+### Create an odd order (routes to ds1)
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orderId": 1,
+  "customerId": 1,
+  "totalPrice": 1.2,
+  "orderStatus": "CANCELLED",
+  "orderDate": "2024-01-01",
+  "deliveryAddress": "some address"
+}
+
+### Create an even order (routes to ds0)
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orderId": 2,
+  "customerId": 1,
+  "totalPrice": 1.2,
+  "orderStatus": "CANCELLED",
+  "orderDate": "2024-01-01",
+  "deliveryAddress": "some address"
+}
+
+### Create another odd order (routes to ds1)
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orderId": 3,
+  "customerId": 1,
+  "totalPrice": 1.2,
+  "orderStatus": "CANCELLED",
+  "orderDate": "2024-01-01",
+  "deliveryAddress": "some address"
+}
+
+### Create another even order (routes to ds0)
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orderId": 4,
+  "customerId": 1,
+  "totalPrice": 1.2,
+  "orderStatus": "CANCELLED",
+  "orderDate": "2024-01-01",
+  "deliveryAddress": "some address"
+}
