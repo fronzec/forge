@@ -2,7 +2,9 @@
 
 Forge is a multilingual engineering lab organized by technology concepts, not programming languages.
 
-- Keep every experiment self-contained, including its dependencies, commands, and context.
+- Keep every experiment self-contained, including its dependencies, commands, and context, and follow the [experiment README guideline](docs/experiment-readme-guideline.md) for its documentation.
+- Before creating a top-level concept directory, follow the [concept guidelines](docs/concepts.md): reuse an existing concept when it fits, and create one only for a meaningfully distinct engineering focus.
+- Update the root README experiment table whenever adding a new experiment or repository; keep the `Experiment` and `Purpose` columns, and insert the row alphabetically by concept, then by experiment name within a repeated concept.
 - Write technical artifacts in English unless an experiment explicitly requires another language.
 - Keep documentation and tests with the behavior they describe.
 - Preserve focused scope; do not expand one experiment into unrelated repository-wide infrastructure.
