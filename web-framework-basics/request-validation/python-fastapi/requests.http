@@ -1,0 +1,74 @@
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/Forge
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/items/foo?short=true
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/items/list/?q=foo&q=bar
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/itemsv3/?item-query=fixedquery
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/items5/1?q=forge&size=10.5
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/items/
+Content-Type: application/json
+
+{
+  "name": "Widget",
+  "description": "A validated item",
+  "price": 45.2,
+  "tax": 3.5
+}
+
+###
+
+PUT http://127.0.0.1:8000/itemsoptional/1234
+Content-Type: application/json
+
+###
+
+PUT http://127.0.0.1:8000/items/multibody/9999?q=forge
+Content-Type: application/json
+
+{
+  "item": {
+    "name": "Widget",
+    "price": 42.0,
+    "tax": 3.2
+  },
+  "user": {
+    "username": "dave",
+    "full_name": "Dave Grohl"
+  },
+  "importance": 5
+}
+
+###
+
+PUT http://127.0.0.1:8000/items/embed/8888
+Content-Type: application/json
+
+{
+  "item": {
+    "name": "Widget",
+    "price": 42.0
+  }
+}
