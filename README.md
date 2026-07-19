@@ -21,3 +21,6 @@ New experiments should follow the [experiment README guideline](docs/experiment-
 | [In-memory storage / HTTP key-value store](in-memory-storage/key-value-store/go-http/) | Migrated snapshot | Expose a concurrent map through HTTP with Prometheus instrumentation. |
 | [Numeric precision / money with decimal libraries](numeric-precision/money/go-decimal/) | Migrated snapshot | Compare floating-point pitfalls with rational and decimal representations. |
 | [Batch processing / generic jobs with GoBatch](batch-processing/generic-jobs/go-gobatch/) | Archived learning | Preserve a parked reader-processor-writer and partitioning proof of concept. |
+| [Web framework basics / Express Hello World](web-framework-basics/hello-world/node-express/) | Migrated snapshot | Demonstrate the minimum Express route and server lifecycle. |
+| [Application scaffolding / Express Generator](application-scaffolding/express-generator/node-express/) | Migrated snapshot | Record the conventional routers, views, middleware, and error boundaries generated for Express. |
+| [REST API / TODO service with Express and Sequelize](rest-api/todo-service/node-express-sequelize/) | Migrated snapshot | Separate routing, controllers, and PostgreSQL persistence in a small task service. |
