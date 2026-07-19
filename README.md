@@ -25,3 +25,4 @@ New experiments should follow the [experiment README guideline](docs/experiment-
 | [Application scaffolding / Express Generator](application-scaffolding/express-generator/node-express/) | Migrated snapshot | Record the conventional routers, views, middleware, and error boundaries generated for Express. |
 | [REST API / TODO service with Express and Sequelize](rest-api/todo-service/node-express-sequelize/) | Migrated snapshot | Separate routing, controllers, and PostgreSQL persistence in a small task service. |
 | [REST API / DNF history with FastAPI](rest-api/system-history/python-fastapi/) | Migrated snapshot | Parse local DNF transaction history through an asynchronous HTTP endpoint. |
+| [Web framework basics / FastAPI request validation](web-framework-basics/request-validation/python-fastapi/) | Migrated snapshot | Demonstrate typed path, query, and body validation with FastAPI and Pydantic. |
