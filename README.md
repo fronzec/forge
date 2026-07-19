@@ -24,3 +24,4 @@ New experiments should follow the [experiment README guideline](docs/experiment-
 | [Web framework basics / Express Hello World](web-framework-basics/hello-world/node-express/) | Migrated snapshot | Demonstrate the minimum Express route and server lifecycle. |
 | [Application scaffolding / Express Generator](application-scaffolding/express-generator/node-express/) | Migrated snapshot | Record the conventional routers, views, middleware, and error boundaries generated for Express. |
 | [REST API / TODO service with Express and Sequelize](rest-api/todo-service/node-express-sequelize/) | Migrated snapshot | Separate routing, controllers, and PostgreSQL persistence in a small task service. |
+| [REST API / DNF history with FastAPI](rest-api/system-history/python-fastapi/) | Migrated snapshot | Parse local DNF transaction history through an asynchronous HTTP endpoint. |
